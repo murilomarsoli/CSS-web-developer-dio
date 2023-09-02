@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trilha de CSS</title>
+  <style> /* CSS Interno: adiciona o CSS na tag style dentro do head do doc HTML*/
+    h2{
+      color: yellow; /* não se aplica o estilo porque o CSS Inline tem prioridade sobre o CSS Interno */
+    }
+    h3{
+      color: blue; /* propriedade: valor; */
+    }
+
+    h4{
+      color: green;
+    }
+  </style>
+</head>
+<body>
+  <h1 style="background: red; color:white;">DIO - Digital Innovation One</h1> <!-- CSS Inline: adiciona o atributo style dentro de cada elemento HTML -->
+  <h2 style="color: red;">Trilha de CSS</h2> <!-- não recomendado por questões de manutenção e leitura -->
+  <h3>Trilha de CSS</h3>
+  <h4>Trilha de CSS</h4>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Padding CSS</title>
+  <style>
+    div {
+      width: 200px;
+      height: 200px;
+      color: white;
+    }
+    
+    /* Margin = margem externa do box (espaçamento entre o border e os outros elementos da página) */
+
+    /* Border = borda do box (entre o margin e padding) */
+
+    /* Padding = margem interna do box (espaçamento entre o conteúdo e border do box) */
+
+    /* Padding -> Border -> Margin (de dentro para fora / da esquerda para a direita) */
+
+    #elemento-01{
+      background: orange;
+      padding: 20px 40px 50px 60px; 
+    }
+    
+    #elemento-02{
+      background: purple;
+      box-sizing: border-box; /* redimensiona automaticamente a largura/altura da caixa para que, após a definição do padding, margin e border, a caixa fique exatamente com o tamnho que lhe foi atribuída inicialmente.*/
+
+      /* final width = width + border + padding) */
+      /* Sem o border-box = 200px + 20px + 20px */
+      /* Com o border-box = 160px + 20px + 20px */
+    }
+  </style>
+</head>
+<body>
+  <div id="elemento-01">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga voluptate, at maxime totam repudiandae adipisci pariatur, molestias porro id doloremque hic libero dolorum inventore aliquid quam a excepturi nobis labore.</div>
+  <div id="elemento-02">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora laudantium dolores veritatis optio! Corrupti incidunt error eos alias amet voluptatum officiis impedit facilis consequatur enim ullam, officia aperiam minima tenetur!</div>
+</body>
+</html>

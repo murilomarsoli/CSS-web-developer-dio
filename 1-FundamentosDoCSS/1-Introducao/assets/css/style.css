@@ -1,0 +1,21 @@
+h1{
+  background-color: red;
+  color: white;
+}
+
+h2{
+  color: blue;
+}
+
+h3{
+  color: green;
+}
+
+h4{
+  color: red
+}
+
+/* CSS Externo: mais organização ao projeto, mais facilidade de manutenção, reutilização do estilo em outras páginas, mais rapidez no carregamento da página web.
+
+  Desvantagem: as vezes o .html pode carregar antes que o arquivo .css, mas temos formas para minimizar esse problema.
+ */

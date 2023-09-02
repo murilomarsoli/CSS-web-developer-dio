@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Largura e Altura CSS</title>
+  <style>
+    #div-01{
+      background-color: lightblue;
+      width: 200px; /* largura */
+      height: 200px; /* altura */
+    }
+
+    #div-02{
+      background-color: lightgreen;
+      height: inherit;
+      /* initial = traz o valor padrão/inicial da propriedade */
+      /* inherit = a propriedade do elemento filho herda o valor da mesma propriedade de seu elemento pai */
+    }
+
+    button {
+      background-color: pink;
+    }
+
+  </style>
+</head>
+<body>
+  <div id="div-01">
+    Sou a div 01
+    <div id="div-02">
+      Sou a div 02
+    </div>
+  </div>
+</body>
+</html>

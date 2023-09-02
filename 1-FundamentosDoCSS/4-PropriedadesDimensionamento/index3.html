@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Margin CSS</title>
+  <style>
+    div {
+      width: 300px;
+      height: 300px;
+    }
+
+    #elemento-01{
+      background-color: orange;
+      /* margin-bottom: 50px; */
+      /* margin: 20px; */ /* 20 pixels de margin em todos os lados */
+      /* margin: 20px 10px; */ /* Cima/baixo - Esquerda/direita */
+      /* margin: 20px 10px 40px; */ /* Cima - Esquerda/direita - Baixo */
+      /* margin: 20px 10px 40px 30px; */ /* Cima - Direita - Baixo - Esquerda */
+      margin: 30px auto 80px; /* Aplica um margin acima - centraliza o elemento de forma horizontal - aplica um margin abaixo */
+    }
+
+    #elemento-02{
+      background-color: purple;
+      /* margin-top: 10px;
+      margin-left: 25px;
+      margin-right: 30px; */
+    }
+  </style>
+</head>
+<body>
+  <div id="elemento-01"></div>
+  <div id="elemento-02"></div>
+</body>
+</html>

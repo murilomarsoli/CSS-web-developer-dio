@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Combinador Descendente CSS</title>
+  <style>
+    li {
+      color: red;
+    }
+
+    /* Pega todos os li's que são descendentes do li de maior nível (em relação a árvore dos elementos HTML) */
+    /* li li {
+      color:green;
+    } */
+
+    /* Pega os li's que são descendentes do id "lista-01" */
+    /* #lista-01 li{
+      background-color: lightblue;
+    } */
+
+    /* Pega os li's que são descendentes da classe "fundo-verde" */
+    .fundo-verde li{
+      background-color: lightgreen;
+    }
+
+    /* Pega os li's que são descendentes da classe "fundo-azul" */
+    .fundo-azul li{
+      background-color: lightblue;
+    }
+
+    /* Pega os li's que são descendentes do id "sublista-01", que é filho da classe "fundo-verde" */
+    .fundo-verde #sublista-01 li{
+      color: black;
+    }
+  </style>
+</head>
+<body>
+  <ul>
+    <li class="fundo-verde" id="lista-01">
+      <div>Item 1</div>
+      <ul id="sublista-01">
+        <li>Subitem A</li>
+        <li>Subitem B</li>
+      </ul>
+    </li>
+    <li class="fundo-verde" id="lista-02">
+      <div>Item 2</div>
+      <ul>
+        <li>Subitem A</li>
+        <li>Subitem B</li>
+      </ul>
+    </li>
+    <li class="fundo-azul" id="lista-03">
+      <div>Item 3</div>
+      <ul>
+        <li>Subitem A</li>
+        <li>Subitem B</li>
+      </ul>
+    </li>
+  </ul>
+</body>
+</html>

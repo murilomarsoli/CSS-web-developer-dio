@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Combinadores CSS</title>
+  <style>
+    /* h1, p, div{
+      color: red;
+      lighting-color: lightblue;  
+    } */
+
+    /* .texto, h1, #link-referencia{
+      color: red;
+    }
+
+    h1, [id^="botao"]{
+      background: lightcoral;
+    } */
+
+    /* vai buscar necessariamente um parágrafo que contém a classe "texto" */
+    /* p.texto{ 
+      color: blueviolet;
+    } */
+
+    /* vai buscar necessariamente o atributo class que tenha em seu valor "texto" e "lorem" */
+    .texto.lorem{
+      color: blueviolet;
+    }
+
+
+
+  </style>
+</head>
+<body>
+    <h1>Agrupamento de Seletores</h1>
+    <p class="texto">Podemos aplicar as mesmas regras CSS para vários seletores diferentes. Para isso, podemos separar os seletores utilizando uma vírgula (,).</p>
+    <p class="lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur quasi nobis deserunt ullam fuga deleniti vitae ipsa saepe consequatur dignissimos, quae similique accusamus. Eligendi voluptas fugiat atque minima ipsam cumque.</p>
+    <div class="texto lorem">Assim, não precisamos ficar só copiando e cloando os mesmos códigos para todos, nós podemos fazer um só bloco de CSS e reutilizar as mesmas regras!</div>
+
+    <br><br> <!-- Utilizado aqui apenas para visualizar melhor os elementos no doc HTML -->
+    <a id="link-referencia" href="#">Clique para ver a documentação</a>
+    <br><br>
+    <a id="link-suporte" href="#">Clique para entrar em contato</a>
+    <br><br>
+    <a id="botao-voltar" href="#">Voltar</a>
+    <br><br>
+    <button id="botao-fechar">Fechar página</button>
+</body>
+</html>

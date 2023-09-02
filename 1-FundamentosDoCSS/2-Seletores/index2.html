@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Seletores de atributo CSS</title>
+  <style>
+    [title="Netflix"]{
+      color: red;
+    }
+
+    [title="Spotify"]{
+      color: green;
+    }
+
+    [title="Prime"]{
+      color: rgb(89, 140, 250);
+    }
+
+    /* Busca o atributo que contém a palavra "Streaming" seguida de um espaço ou no final do atributo*/
+    [title~="Streaming"]{
+      background-color: bisque;
+    }
+
+    /* Busca o atributo que contém a palavra "Streaming" no início do atributo e seguida de um hífen - */
+    [title|="Streaming"]{
+      background-color: rgb(223, 63, 0);
+    }
+
+    /* Busca o atributo que possui o prefixo especificado */
+    [href^="http://"]{
+      color: rgb(160, 39, 39);
+    }
+
+    /* Busca o atributo que possui o sufixo especificado */
+    [href$="login"]{
+      color: rgb(255, 255, 255);
+    }
+
+    /* Busca o atributo que possui a palavra especificada em qualquer lugar do valor do atributo */
+    [href*="plus"]{
+      text-transform: uppercase;
+    }
+  </style>
+</head>
+<body>
+  <ul>
+    <li>
+      <a title="Netflix" href="https://www.netflix.com/">
+        Netflix
+      </a>  
+    </li>
+    <li>
+      <a title="Prime" href="https://www.primevideo.com/">
+        Prime Video
+      </a>
+    </li>
+    <li>
+      <a title="Spotify" href="https://www.spotify.com/">
+        Spotify
+      </a>
+    </li>
+    <li>
+      <a title="Streaming Disney" href="http://www.disneyplus.com/pt-br">
+        Disney Plus
+      </a>
+    </li>
+    <li>
+      <a title="HBO Max Streaming" href="http://www.hbomax.com/br/pt">
+        HBO Max
+      </a>
+    </li>
+    <li>
+      <a title="Streaming-Star-Plus" href="https://www.starplus.com/login">
+        Star+
+      </a>
+    </li>
+  </ul>
+</body>
+</html>
