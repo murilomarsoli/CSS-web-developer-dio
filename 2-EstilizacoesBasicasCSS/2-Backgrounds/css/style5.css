@@ -1,0 +1,35 @@
+div {
+  margin-bottom: 30px;
+  width: 300px;
+  height: 300px;
+  background-image: url('../img/bird-perched-on-a-wire.jpg');
+  background-size: 120px;
+  border: 2px solid red;
+}
+
+#exemplo1 {
+  background-repeat: repeat-x;
+  /* repete no eixo x (horizontal) */
+}
+
+#exemplo2 {
+  background-repeat: repeat-y;
+  /* repete no eixo y (vertical) */
+}
+
+#exemplo3 {
+  background-repeat: space;
+}
+
+#exemplo4 {
+  background-repeat: round;
+  /* repete em todas as direções a fim de tocar as quatro bordas da div, se redimensionando */
+}
+
+#exemplo5 {
+  background-repeat: no-repeat;
+}
+
+#exemplo6 {
+  background-repeat: repeat space;
+}

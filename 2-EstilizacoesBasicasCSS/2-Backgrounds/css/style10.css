@@ -1,0 +1,16 @@
+div {
+  width: 300px;
+  height: 300px;
+  border: 15px dashed palegreen;
+  font-size: 40px;
+  font-weight: 900;
+  padding: 30px;
+  color: white;
+
+  background:
+    url('../img/abandoned-iceland-farm-home.jpg')
+    center / 100% 100%
+    no-repeat
+    content-box
+  ;
+}

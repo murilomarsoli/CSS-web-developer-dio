@@ -1,0 +1,33 @@
+div {
+  margin-bottom: 30px;
+  width: 300px;
+  height: 300px;
+  background-image: url('../img/bird-perched-on-a-wire.jpg');
+  background-size: 120px;
+  background-repeat: no-repeat;
+  border: 2px solid red;
+}
+
+#exemplo1 {
+  background-position: bottom;
+}
+
+#exemplo2 {
+  background-position: 30px;
+  /* 30px afastado da posição inicial do elemento */
+}
+
+#exemplo3 {
+  background-position: center right;
+}
+
+#exemplo4 {
+  background-position: 70% 90px;
+}
+
+#exemplo5 {
+  background-position: top 20px left 20px;
+  /* "valores de cantos relativos" */
+}
+
+/* camadas = background-position: camada1, camada2, ...; */

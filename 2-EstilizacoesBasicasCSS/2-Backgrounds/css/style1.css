@@ -1,0 +1,35 @@
+div{
+  width: 200px;
+  height: 300px;
+  border: 5px solid blue;
+}
+
+img{
+  width: 100%; /* se encaixa em todo o width da div */
+  height: 100%; /* se encaixa em todo o height da div */
+}
+
+/* a imagem vai se encaixar toda alterando sua proporção de acordo com a div */
+#fill{
+  object-fit: fill; /* valor padrão */
+}
+
+/* a imagem vai encaixar na div, talvez diminua, mas manterá sua proporção */
+#contain {
+  object-fit: contain;
+}
+
+/* a imagem vai manter seu tamanho definido porém vai preencher a div sem alterar sua proporção, vai "cobrir" a div */
+#cover {
+  object-fit: cover;
+}
+
+/* vai mostrar somente o pedaço da imagem no seu tamanho original que a div está pegando, vai cortar a imagem */
+#none {
+  object-fit: none; 
+}
+
+/* vê qual é a proporção (entre contain e none) que está em uma configuração menor */
+#scale-down {
+  object-fit: scale-down;
+}

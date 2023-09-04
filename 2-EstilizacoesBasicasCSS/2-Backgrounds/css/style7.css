@@ -1,0 +1,22 @@
+/* background-attachment: como o fundo vai se movimentar em relação a janela do navegador */
+div {
+  margin-bottom: 30px;
+  width: 600px;
+  height: 400px;
+  background-image: url('../img/bird-perched-on-a-wire.jpg');
+  background-size: cover;
+  border: 2px solid red;
+  overflow: auto;
+}
+
+#fixed {
+  background-attachment: fixed;
+}
+
+#scroll {
+  background-attachment: scroll;
+}
+
+#local {
+  background-attachment: local;
+}

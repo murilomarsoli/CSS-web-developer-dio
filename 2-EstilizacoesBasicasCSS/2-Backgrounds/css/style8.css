@@ -1,0 +1,27 @@
+/* background-origin: define a posição de origem da imagem no box */
+
+div {
+  margin-bottom: 30px;
+  width: 300px;
+  height: 300px;
+  background-image: url('../img/abandoned-iceland-farm-home.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  border: 15px dashed palegreen;
+  padding: 30px;
+}
+
+#padding-box {
+  background-origin: padding-box;
+  /* a imagem de background vai ocupar o box a partir do padding, tem o border como limitante */
+}
+
+#border-box {
+  background-origin: border-box;
+  /* a imagem de background vai ocupar toda o box, padding e border, tem o margin como limitante */
+}
+
+#content-box {
+  background-origin: content-box;
+  /* a imagem de background vai ocupar apenas a área content do box, tendo o padding como limitante */
+}
