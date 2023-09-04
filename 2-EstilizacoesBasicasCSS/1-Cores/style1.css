@@ -1,0 +1,41 @@
+#pre-definidas{
+  color: indianred;
+  /* background-color: transparent; deixa o background transparente */
+}
+
+#current-color{
+  color: rgb(255, 163, 42);
+  border: 2px solid currentColor;
+  /* currentColor captura a cor atual daquele elemento */
+}
+
+/* MAIS UTILIZADO */
+#rgb{
+  /* color: rgb(red, green, blue); */
+  color: rgb(165, 228, 64);
+  /* color: rgb(40%, 47%, 30%); */
+}
+
+/* MAIS UTILIZADO */
+#rgba{
+  background: rgba(13, 136, 218, 0.3);
+  /* transparência = 0.0 a 1.0 */
+}
+
+/* MAIS UTILIZADO */
+#hex{
+  /* color: #000000;*/ /*#00(red)00(green)00(gblue) + transparêcnia = 00 - FF */
+  background: #0c22eb;
+  color: #00000046; /* 46 é a transparência aplicada*/
+}
+
+
+#hsl{
+  /* hsl(hue, saturation, lightness) */
+  /* (matiz, saturação, luminosidade) */
+  color: hsl(167, 100%, 40%);
+}
+
+#hsla{
+  color: hsl(167, 100%, 40%, 50%);
+}
