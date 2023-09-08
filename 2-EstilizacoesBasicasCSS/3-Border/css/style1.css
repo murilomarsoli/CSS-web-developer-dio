@@ -1,0 +1,13 @@
+.exemplo {
+  background-color: pink;
+  width: 200px;
+  height: 200px;
+
+  border: 10px solid blue;
+  border-top: 5px dashed orange;
+
+  border-radius: 20px;
+  /* border-radius: 50%; */
+  /* border-radius: 10px 20px 30px 15px; */
+  /* border-radius: 50px/100px; */
+}

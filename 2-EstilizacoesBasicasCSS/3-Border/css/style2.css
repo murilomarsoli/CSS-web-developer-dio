@@ -1,0 +1,29 @@
+div{
+  margin: 100px;
+  background: black;
+  width: 200px;
+  height: 200px;
+  border: 30px solid;
+}
+
+#exemplo1{
+  border-image-source: url('../img/three-boxes-of-crisp-popcorn-in-candy-striped-packaging.jpg');
+  border-image-slice: 1;
+  border-image-repeat: round;
+  border-image-width: 30px;
+  border-image-outset: 50px;
+}
+
+#exemplo2{
+  border-image-source: linear-gradient(red, blue);
+  border-image-slice: 50;
+  border-image-width: 10px;
+  border-image-outset: 30px 10px;
+}
+
+#exemplo-resumido{
+  border-image: url('../img/three-boxes-of-crisp-popcorn-in-candy-striped-packaging.jpg') 1 / 10px 20px / 1 round;
+}
+
+
+
