@@ -1,0 +1,50 @@
+@import url('global.css');
+
+h1 {
+  font-weight: bold;
+}
+
+p {
+  font-weight: normal;
+}
+
+ul {
+    font-size: 60px;
+}
+
+#line-height{
+  line-height: 1.5;
+}
+
+#exemplo-bold{
+  font-weight: bold;
+}
+
+#xx-small{
+  font-size: xx-small;
+}
+
+#small{
+  font-size: small;
+}
+
+#x-large{
+  font-size: x-large;
+  font-style: italic;
+  font-weight: 700;
+}
+
+#xx-large{
+  font-size: xx-large;
+  font-style: oblique;
+  line-height: 70%;
+}
+
+#small-caps{
+  font-size: 20px;
+  font-variant: small-caps;
+}
+
+#exemplo-resumido{
+  font: italic small-caps bold 24px/ 1.6 Georgia, serif;
+}

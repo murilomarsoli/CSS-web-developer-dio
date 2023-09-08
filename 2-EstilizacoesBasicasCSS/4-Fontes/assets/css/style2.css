@@ -1,0 +1,42 @@
+@import url(./global.css);
+
+h1 + p{
+  text-decoration: underline;
+}
+
+a {
+  text-decoration: none;
+}
+
+#text-transform {
+  text-transform: uppercase;
+  text-indent: 30px; /* indenta o início do parágrafo */
+}
+
+#align-center,
+#align-justify {
+  background-color: rgb(205, 205, 211);
+  padding: 10px;
+}
+
+#align-center {
+  text-align: center;
+}
+
+#align-justify {
+  width: 370px;
+  text-align: justify;
+}
+
+#text-decoration-line {
+  text-decoration-line: underline;
+  text-decoration-style: dashed;
+  text-decoration-color: red;
+  text-decoration-thickness: 4px;
+  word-spacing: 10px; /* espaçamento entre as palavras */
+}
+
+#text-decoration {
+  text-decoration: underline wavy green 2px;
+  letter-spacing: 4px; /* espaçamento entre as letras */
+}

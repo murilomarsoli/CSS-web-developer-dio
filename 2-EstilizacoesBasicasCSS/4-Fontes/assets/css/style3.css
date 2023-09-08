@@ -1,0 +1,59 @@
+@import url("global.css");
+
+.exemplo {
+  background-color: rgb(189, 245, 189);
+  width: 200px;
+}
+
+.exemplo2 {
+  background-color: rgb(189, 245, 189);
+  width: 100px;
+}
+
+span {
+  background-color: rgb(135, 196, 135);
+}
+
+#no-wrap {
+  white-space: nowrap; /* não quebra a linha */
+}
+
+#pre {
+  white-space: pre; /* quebra a linha apenas onde há quebra de linha no html, independente do limitante do texto (width: 200px) */
+}
+
+#pre-line {
+  white-space: pre-line; /* quebra a linha onde há quebra porém respeita o limitante do texto */
+}
+
+#pre-wrap {
+  white-space: pre-wrap; /* mesmo que pre-line, mas os espaços em branco são preservados */
+}
+
+#break-spaces {
+  white-space: break-spaces;
+}
+
+#break-word {
+  word-wrap: break-word;
+}
+
+#word-break {
+  word-break: normal;
+}
+
+#break-all {
+  word-break: break-all;
+}
+
+#writing-mode {
+  writing-mode: horizontal-tb;
+}
+
+#vertical-rl {
+  writing-mode: vertical-rl;
+}
+
+#vertical-lr {
+  writing-mode: vertical;
+}
