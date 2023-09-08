@@ -1,0 +1,26 @@
+div {
+  width: 200px;
+  height: 200px;
+  border: 10px solid #8f382e;
+  background-color: #d1938c;
+  margin: 20px auto;
+}
+
+#exemplo1 {
+  box-shadow: 20px 20px 10px -5px rgb(231, 58, 58); /* eixoX eixoY blur tamanho cor */
+}
+
+#exemplo2 {
+  box-shadow: inset 20px 20px 10px -5px rgb(231, 58, 58); /* borda interna */
+}
+
+/* filter: drop-shadow(10px 10px 5px gray) = aplica sombra no conteúdo da imagem png (exemplo logo 'dio._') */
+
+#exemplo3 {
+  color: #8f382e;
+  font-size: 40px;
+  text-align: center;
+  text-shadow: 5px 7px 6px purple;
+  /* filter: drop-shadow(5px 7px 6px purple); */
+
+}

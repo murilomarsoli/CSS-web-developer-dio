@@ -1,0 +1,46 @@
+div {
+  margin-bottom: 40px;
+}
+
+.overflow {
+  background-color: rgb(238, 141, 51);
+  padding: 20px;
+  border: 4px solid black;
+  width: 200px;
+  height: 200px;
+ }
+
+#overflow-x { /* overflow-x (horizontal), overflow-y (vertical) */
+  background-color: rgb(238, 141, 51);
+  border: 4px solid black;
+  white-space: nowrap;
+  overflow-x: auto;
+}
+
+#opacity {
+  background-color: red;
+  border: 2px solid black;
+  box-shadow: 7px 7px 2px -2px black;
+  padding: 3px;
+  text-indent: 20px;
+  font-weight: bold;
+  opacity: 0.4;
+}
+
+#overflow-visible {
+  overflow: visible;
+  margin-bottom: 320px;
+}
+
+#overflow-hidden {
+  overflow: hidden;
+}
+
+#overflow-scroll {
+  overflow: scroll;
+}
+
+#overflow-auto {
+  overflow: auto; /* aplica o scroll automaticamente caso o conteúdo ultrapassar a div */
+}
+
