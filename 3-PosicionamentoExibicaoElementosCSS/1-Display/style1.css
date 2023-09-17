@@ -1,0 +1,28 @@
+.exemplo {
+  background-color: aquamarine;
+}
+
+.inline {
+  width: 300px; /* não funciona */
+  height: 300px; /* não funciona */
+  padding: 30px;
+  margin: 30px;
+  background-color: #7fffd490;
+}
+
+.inline-block {
+  display: inline-block;
+  width: 300px;
+  height: 300px;
+  padding: 30px;
+  margin: 30px;
+}
+
+#none-01 {
+  display: none;
+}
+
+#item-01 {
+  visibility: hidden;
+}
+
