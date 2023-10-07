@@ -1,0 +1,35 @@
+.container {
+  background: palegreen;
+  padding: 20px;
+  display: flex;
+  margin-bottom: 10px;
+  width: 300px;
+  /* flex-wrap: wrap-reverse; */ /* inverte a ordem dos flex-items que foram quebrados no flex-container */
+  align-items: center;
+}
+
+.item {
+  background: orange;
+  margin: 10px;
+}
+
+#container1 {
+  /* flex-direction: row; */ /* direção dos flex-items */
+  flex-flow: row wrap; /* shorthand de flex-direction e flex-wrap */
+}
+
+#container2 {
+  flex-direction: column;
+}
+
+#container3 {
+  /* flex-direction: row-reverse; */
+  height: 100px;
+  flex-flow: row wrap-reverse;
+}
+
+#container4 {
+  /* flex-direction: column; */
+  height: 300px;
+  flex-flow: column wrap-reverse;
+}

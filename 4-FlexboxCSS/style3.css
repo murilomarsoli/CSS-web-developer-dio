@@ -1,0 +1,64 @@
+.container {
+  width: 400px;
+  background-color: blueviolet;
+  padding: 10px;
+  margin: 20px;
+
+  display: flex;
+  flex-wrap: wrap;
+  /* row-gap: 30px; */
+  /* column-gap: 30px; */
+  gap: 10px;
+}
+
+.item {
+  background-color: yellow;
+  padding: 8px;
+  width: 50px;
+  height: 50px;
+  /* flex: <grow> <shrink> <basis>; */
+  /* flex: initial; (padrão) */ /* flex: 0 1 auto */
+  /* flex: auto; */ /* flex: 1 1 auto */
+  /* flex: none; */ /* flex: 0 0 auto */
+  /* flex: 1; */ /* flex: 1 1 0 */
+  /* flex: 2; */ /* flex: 2 1 0 */
+  /* flex: 3; */ /* flex: 3 1 0 */
+  /* flex: 20px; */ /* flex: 1 1 20px; */
+}
+
+#container2 {
+  flex-flow: column wrap;
+}
+
+.it4 {
+  order: -1; /* propriedade voltada para os flex-items */
+  /* ordem padrão = 0; */
+  flex-basis: 150px; /* tamanho base (inicial) no eixo principal do flex-item */
+  /* valor padrão flex-basis: auto */
+}
+
+.it8 {
+  order: -2;
+  flex-grow: 1; /* distribuição dos espaços extras aos itens, de acordo com seus valores de preferência. Quanto maior, mais preferência (maior o espaço) */
+}
+
+.it7 {
+  order: 1;
+  flex-grow: 2;
+  flex-basis: 0; /* vai ocupar somente o tamanho necessário para o conteúdo do flex-item */
+  /* flex-basis respeitará o min e max width/height */
+}
+
+.it5 {
+  order: 2;
+  flex-grow: 3;
+  flex-basis: min-content;
+  /* utiliza o tamanho do menor elemento dentro do flex-item, utilizará o mínimo necessário de tamanho */
+  /* max-content:  utiliza o tamanho para que mostre todo o conteúdo do flex-item */
+}
+
+.it3-shrink,
+.it6-shrink {
+  flex-shrink: 2; /* os itens encolherão caso necessário */
+  /* valor padrão: 1 */
+}
