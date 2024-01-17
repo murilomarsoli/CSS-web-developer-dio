@@ -1,8 +1,8 @@
-/* Arquivo que resete as configurações padrão de estilo dos navegadores */
+/* Resetar as configurações padrão de estilo dos navegadores */
 * {
   padding: 0;
   border: 0;
   margin: 0;
   vertical-align: baseline;
-  list-style: none;
+  list-style: none; 
 }

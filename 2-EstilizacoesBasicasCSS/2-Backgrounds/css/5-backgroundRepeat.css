@@ -31,5 +31,5 @@ div {
 }
 
 #exemplo6 {
-  background-repeat: repeat space;
+  background-repeat: repeat space; /* (eixoX eixoY) */
 }

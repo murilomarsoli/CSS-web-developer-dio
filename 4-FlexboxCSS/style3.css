@@ -3,7 +3,7 @@
   background-color: blueviolet;
   padding: 10px;
   margin: 20px;
-
+  /* align-self: center; propriedade usada apenas para alinhar flex-items dentro de um flex-container */
   display: flex;
   flex-wrap: wrap;
   /* row-gap: 30px; */
@@ -39,7 +39,7 @@
 
 .it8 {
   order: -2;
-  flex-grow: 1; /* distribuição dos espaços extras aos itens, de acordo com seus valores de preferência. Quanto maior, mais preferência (maior o espaço) */
+  flex-grow: 1; /* quanto maior, mais preferência (maior o espaço a ocupar dentre os outros flex-items) */
 }
 
 .it7 {
@@ -59,6 +59,6 @@
 
 .it3-shrink,
 .it6-shrink {
-  flex-shrink: 2; /* os itens encolherão caso necessário */
+  flex-shrink: 2; /* os itens encolherão caso necessário, quanto maior, maior preferência (menor o espaço a ocupar dentre os outros flex-items) */
   /* valor padrão: 1 */
 }

@@ -8,9 +8,9 @@ div {
   color: white;
 
   background:
-    url('../img/abandoned-iceland-farm-home.jpg')
-    center / 100% 100%
-    no-repeat
-    content-box
+    url('../img/abandoned-iceland-farm-home.jpg')  /* background-image */
+    center / 100% 100% /* object-position / background-size */
+    no-repeat /* background-repeat */
+    content-box /* background-clip */
   ;
 }

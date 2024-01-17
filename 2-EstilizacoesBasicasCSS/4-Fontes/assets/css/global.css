@@ -3,6 +3,6 @@
 
 * {
   /* font-family: 'Poppins', sans-serif; */
-  font-family: 'Roboto', sans-serif;
-  font-family: 'Arial';
+  font-family: 'Roboto', sans-serif; /* fonte principal, fonte de segurança */
+  font-family: 'Arial'; /* fonte secundária */
 }

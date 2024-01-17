@@ -15,7 +15,7 @@
 
 #container1 {
   /* flex-direction: row; */ /* direção dos flex-items */
-  flex-flow: row wrap; /* shorthand de flex-direction e flex-wrap */
+  flex-flow: row wrap; /* shorthand de flex-direction e flex-wrap (quebrar ou não quebrar linha se necessário) */
 }
 
 #container2 {

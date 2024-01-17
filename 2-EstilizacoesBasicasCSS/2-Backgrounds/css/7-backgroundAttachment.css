@@ -10,13 +10,13 @@ div {
 }
 
 #fixed {
-  background-attachment: fixed;
+  background-attachment: fixed; /* fundo da página fica parado */
 }
 
 #scroll {
-  background-attachment: scroll;
+  background-attachment: scroll; /* só o texto scrolla */
 }
 
 #local {
-  background-attachment: local;
+  background-attachment: local; /* fundo desce junto */
 }

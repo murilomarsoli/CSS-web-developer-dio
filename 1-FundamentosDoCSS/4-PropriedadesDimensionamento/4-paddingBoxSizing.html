@@ -17,7 +17,7 @@
 
     /* Padding = margem interna do box (espaçamento entre o conteúdo e border do box) */
 
-    /* Padding -> Border -> Margin (de dentro para fora / da esquerda para a direita) */
+    /* Content -> Padding -> Border -> Margin (de dentro para fora / da esquerda para a direita) */
 
     #elemento-01{
       background: orange;
@@ -28,7 +28,8 @@
       background: purple;
       box-sizing: border-box; /* redimensiona automaticamente a largura/altura da caixa para que, após a definição do padding, margin e border, a caixa fique exatamente com o tamnho que lhe foi atribuída inicialmente.*/
 
-      /* final width = width + border + padding) */
+      /* final width = width + border + padding */
+      
       /* Sem o border-box = 200px + 20px + 20px */
       /* Com o border-box = 160px + 20px + 20px */
     }

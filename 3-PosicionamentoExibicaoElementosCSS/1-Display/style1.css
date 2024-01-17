@@ -2,7 +2,7 @@
   background-color: aquamarine;
 }
 
-.inline {
+.inline { /* valor-padrão do navegador, width e height não funcionam */
   width: 300px; /* não funciona */
   height: 300px; /* não funciona */
   padding: 30px;
@@ -10,7 +10,7 @@
   background-color: #7fffd490;
 }
 
-.inline-block {
+.inline-block { /* width e height funcionam */
   display: inline-block;
   width: 300px;
   height: 300px;

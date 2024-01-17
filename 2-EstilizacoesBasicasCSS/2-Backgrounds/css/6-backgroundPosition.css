@@ -18,7 +18,7 @@ div {
 }
 
 #exemplo3 {
-  background-position: center right;
+  background-position: right center; /* (eixoX eixoY) */
 }
 
 #exemplo4 {
