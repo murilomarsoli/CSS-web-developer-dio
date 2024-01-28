@@ -11,15 +11,82 @@ body {
   padding: 20px;
   display: grid;
   
-  grid-template-columns: 1fr 6fr 1fr; /* qtd e tamanho colunas (col1 col2 col3) */
+  grid-template-columns: 1fr 2fr 1fr; /* qtd e tamanho colunas (col1 col2 col3) */
   /* medida relativa - 1fr -> "uma fração do espaço do elemento pai" - criada somente para o grid CSS */
 
-  grid-template-rows: 1fr 2fr; /* qtd e tamanho linhas (row1 row2)*/
+  grid-template-rows: repeat(3, 1fr); /* 1fr 1fr 1fr - qtd e tamanho linhas (row1 row2 row3(que ainda não tem divs, mas o espaço foi alocado) )*/
+
+  /* repeat(qtd_repetições, tamanho_a_repetir) */
   
   /* 200px 400px; */
   /* 200px 50%; e etc...*/
 
   /* não precisa ser necessariamente uma única unidade de medida para todos */
+}
+
+.grid-container2 {
+  background-color: rgb(0, 225, 255);
+  max-width: 100vw;
+  height: 40vh;
+  margin: 10px;
+  padding: 20px;
+  display: grid;
+  
+  grid-template-columns: 100px repeat(3, 2fr) 100px; /* 100px 2fr 2fr 2fr 100px */
+  grid-template-rows: 1fr 1fr;
+}
+
+.grid-container3 {
+  background-color: rgb(0, 255, 55);
+  max-width: 100vw;
+  height: 40vh;
+  margin: 10px;
+  padding: 20px;
+  display: grid;
+  
+  grid-template-columns: repeat(3, 1fr 3fr); /* 3 faixas com a config 1fr e 3fr */
+  grid-template-rows: 1fr;
+}
+
+.grid-container4 {
+  background-color: rgb(255, 0, 34);
+  max-width: 100vw;
+  height: 40vh;
+  margin: 10px;
+  padding: 20px;
+  display: grid;
+  
+  grid-template-columns: repeat(auto-fill, 200px); /* vai pré-configurar os espaços das colunas do grid com 500px de modo a preencher todo o grid automaticamente, mesmo que ainda não tenham itens (caso não tenha mais espaço para um item ser alocado em exatamente 500px, o item será alocado na próxima linha, mas com os 500px pré-determinado pelo repeat) */
+  grid-template-rows: repeat(2, 1fr);
+}
+
+/* USAR SHIFT+I(modo dev do google) PARA ENXERGAR AMBAS OS VALORES auto-fill e auto-fit da função repeat */
+
+.grid-container5 {
+  background-color: rgb(255, 0, 34);
+  max-width: 100vw;
+  height: 40vh;
+  margin: 10px;
+  padding: 20px;
+  display: grid;
+  
+  grid-template-columns: repeat(auto-fit, 200px); /* vai pré-configurar os espaços das colunas do grid com 500px de modo a preencher todo o grid automaticamente, mas APENAS DAS COLUNAS QUE JÁ POSSUEM ITENS (caso não tenha mais espaço para um item ser alocado em exatamente 500px, o item será alocado na próxima linha, mas com os 500px pré-determinado pelo repeat) */
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.grid-container6 {
+  background-color: rgb(255, 0, 212);
+  max-width: 100vw;
+  height: 40vh;
+  margin: 10px;
+  padding: 20px;
+  display: grid;
+  
+  grid-template-columns: min-content max-content;
+  /* min-content = a coluna conterá o tamanho mínimo do item com o maior conteúdo, contendo quebra de linha (nesse caso, a palavra "iteeemmmm" é o maior conteúdo, dando seu tamanho à coluna) */
+  /* max-content = a coluna conterá o tamanho máximo do item com maior conteúdo de modo com que todo o conteúdo do item apareça sem quebra de linha */
+
+  grid-template-rows: auto auto auto auto; /* auto = valor padrão em relação ao grid, se ajusta automaticamente com o conteúdo PORÉM tem menos prioridade em relação às outras unidades de medida como o "fr" */
 }
 
 .item {
