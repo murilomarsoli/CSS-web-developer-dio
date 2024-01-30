@@ -1,0 +1,63 @@
+.grid-container {
+  background-color: yellow;
+  max-width: 100vw;
+  margin: 10px;
+  padding: 20px;
+  
+  display: grid;
+
+  /* grid EXPLÍCITO: as linhas e colunas são configuradas pelos grid-template-columns/rows */
+  grid-template-columns: repeat(6, 1fr); /* 6 colunas definidas */
+  grid-auto-rows: minmax(100px, auto); /* minmax(valor mínimo, valor máximo) */
+
+  grid-auto-columns: 3fr; /* grid IMPLÍCITO: as linhas que não são especificadas na propriedade grid-template-columns, que são alocadas de forma automática dentro do grid (grid-auto-columns: seu valor padrão é "auto"). O MESMO SERVE PARA O GRID-AUTO-ROWS */
+
+  grid-auto-flow: column; /* (seu valor padrão é "row") grid-auto-flow define a maneira que os "grid-itens" automáticos serão posicionados no grid (em linhas ou em colunas) */
+}
+
+.grid-container2 {
+  background-color: yellow;
+  max-width: 100vw;
+  margin: 10px;
+  padding: 20px;
+  
+  display: grid;
+
+  grid-template-columns: minmax(100px, 400px) minmax(auto, 800px); /* col1 col2 */
+  grid-template-rows: repeat(2, minmax(50px, 90px));
+
+  grid-auto-flow: column;
+  grid-auto-columns: 3fr; /* as outras 3 colunas adicionadas automaticamente */
+}
+
+.item {
+  border: 1px solid black;
+}
+
+.it-1 {
+  background-color: palegreen;
+}
+
+.it-2 {
+  background-color: indianred;
+}
+
+.it-3 {
+  background-color: palevioletred;
+}
+
+.it-4 {
+  background-color: cornflowerblue;
+}
+
+.it-5 {
+  background-color: burlywood;
+}
+
+.it-6 {
+  background-color: darkorchid;
+}
+
+.it-7 {
+  background-color: lightcoral;
+}

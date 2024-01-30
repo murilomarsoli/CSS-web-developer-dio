@@ -86,7 +86,7 @@ body {
   /* min-content = a coluna conterá o tamanho mínimo do item com o maior conteúdo, contendo quebra de linha (nesse caso, a palavra "iteeemmmm" é o maior conteúdo, dando seu tamanho à coluna) */
   /* max-content = a coluna conterá o tamanho máximo do item com maior conteúdo de modo com que todo o conteúdo do item apareça sem quebra de linha */
 
-  grid-template-rows: auto auto auto auto; /* auto = valor padrão em relação ao grid, se ajusta automaticamente com o conteúdo PORÉM tem menos prioridade em relação às outras unidades de medida como o "fr" */
+  grid-template-rows: auto auto auto; /* auto = valor padrão em relação ao grid, se ajusta automaticamente com o conteúdo PORÉM tem menos prioridade em relação às outras unidades de medida como o "fr" */
 }
 
 .item {
