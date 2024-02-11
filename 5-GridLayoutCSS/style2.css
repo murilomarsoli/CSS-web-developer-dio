@@ -56,7 +56,7 @@ body {
   padding: 20px;
   display: grid;
   
-  grid-template-columns: repeat(auto-fill, 200px); /* vai pré-configurar os espaços das colunas do grid com 500px de modo a preencher todo o grid automaticamente, mesmo que ainda não tenham itens (caso não tenha mais espaço para um item ser alocado em exatamente 500px, o item será alocado na próxima linha, mas com os 500px pré-determinado pelo repeat) */
+  grid-template-columns: repeat(auto-fill, 200px); /* vai pré-configurar os espaços das colunas do grid com 200px de modo a preencher todo o grid automaticamente, mesmo que ainda não tenham itens (caso não tenha mais espaço para um item ser alocado em exatamente 200px, o item será alocado na próxima linha, mas com os 200px pré-determinado pelo repeat auto-fill) */
   grid-template-rows: repeat(2, 1fr);
 }
 
@@ -70,7 +70,7 @@ body {
   padding: 20px;
   display: grid;
   
-  grid-template-columns: repeat(auto-fit, 200px); /* vai pré-configurar os espaços das colunas do grid com 500px de modo a preencher todo o grid automaticamente, mas APENAS DAS COLUNAS QUE JÁ POSSUEM ITENS (caso não tenha mais espaço para um item ser alocado em exatamente 500px, o item será alocado na próxima linha, mas com os 500px pré-determinado pelo repeat) */
+  grid-template-columns: repeat(auto-fit, 200px); /* vai pré-configurar os espaços das colunas do grid com 200px de modo a preencher todo o grid automaticamente, mas APENAS DAS COLUNAS QUE JÁ POSSUÍREM ITENS (caso não tenha mais espaço para um item ser alocado em exatamente 200px, o item será alocado na próxima linha, mas com os 200px pré-determinado pelo repeat auto-fit) */
   grid-template-rows: repeat(2, 1fr);
 }
 
@@ -83,7 +83,7 @@ body {
   display: grid;
   
   grid-template-columns: min-content max-content;
-  /* min-content = a coluna conterá o tamanho mínimo do item com o maior conteúdo, contendo quebra de linha (nesse caso, a palavra "iteeemmmm" é o maior conteúdo, dando seu tamanho à coluna) */
+  /* min-content = a coluna conterá o tamanho mínimo do item com o maior conteúdo, contendo quebra de linha (nesse caso, a palavra "iteeemmmm" é o maior conteúdo, dando seu tamanho à coluna toda) */
   /* max-content = a coluna conterá o tamanho máximo do item com maior conteúdo de modo com que todo o conteúdo do item apareça sem quebra de linha */
 
   grid-template-rows: auto auto auto; /* auto = valor padrão em relação ao grid, se ajusta automaticamente com o conteúdo PORÉM tem menos prioridade em relação às outras unidades de medida como o "fr" */
